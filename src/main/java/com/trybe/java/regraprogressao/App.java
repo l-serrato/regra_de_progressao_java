@@ -1,4 +1,5 @@
 package com.trybe.java.regraprogressao;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,9 +13,13 @@ public class App {
     double percentualAlcancado = calcularResultado(atividades, notas);
 
     if (percentualAlcancado >= 85) {
-      System.out.printf("Parabéns! Você alcançou %.2f%%! Temos o prazer de informar que você obteve aprovação!%n", percentualAlcancado);
+      System.out.printf(
+          "Parabéns! Você alcançou %.2f%%! Temos o prazer de informar que você obteve aprovação!%n",
+          percentualAlcancado);
     } else {
-      System.out.printf("Lamentamos informar que, com base na sua pontuação alcançada neste período, %.2f%%, você não atingiu a pontuação mínima necessária para sua aprovação.%n", percentualAlcancado);
+      System.out.printf(
+          "Lamentamos informar que, com base na sua pontuação alcançada neste período, %.2f%%, você não atingiu a pontuação mínima necessária para sua aprovação.%n",
+          percentualAlcancado);
     }
 
     scanner.close();
@@ -72,6 +77,7 @@ public class App {
 }
 
 class Atividade {
+
   private String nome;
   private int peso;
 
@@ -90,6 +96,7 @@ class Atividade {
 }
 
 class Nota {
+
   private Atividade atividade;
   private double pontos;
 
@@ -106,3 +113,4 @@ class Nota {
     return pontos;
   }
 }
+

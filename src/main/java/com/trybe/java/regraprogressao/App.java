@@ -113,4 +113,3 @@ class Nota {
     return pontos;
   }
 }
-
